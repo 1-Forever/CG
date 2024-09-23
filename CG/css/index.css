@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.HSV {
+  width: 210px;
+  float: left;
+  margin-left: auto;
+}
+.HSV .hsv_box {
+  width: 200px;
+  float: left;
+  margin-left: auto;
+}
+.HSV .range {
+  border: 1px solid #000;
+  margin: 0;
+  width: 190px;
+}
+.canvas {
+  width: 170px;
+  height: 150px;
+  float: left;
+  margin: 0 auto;
+}
+.canvas .color {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.RGB {
+  width: 210px;
+  float: left;
+  margin-left: auto;
+}
+.RGB .rgb_box {
+  width: 200px;
+  float: left;
+  margin-left: auto;
+}
+.RGB .rgb_box .range {
+  border: 1px solid #000;
+  margin: 0 auto;
+  width: 190px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB与HSV相互转换</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 控件分布,左边为HSV数据,右边为RGB数据,中间为颜色显示 -->
+<div class="HSV">
+
+    <div id = "HSV_H" class="hsv_box">
+        H:<input type="number" id="H" min="0" max="360" step="1" value="0" onclick="get_H()">
+        <input type="range" id="H_range" min="0" max="360" step="1" value="0" class="range">
+    </div>
+
+    <div id = "HSV_S" class="hsv_box">
+        S:<input type="number" id="S" min="0" max="100" step="1" value="0" onclick="get_S()">
+        <input type="range" id="S_range" min="0" max="100" step="1" value="0" class="range" >
+    </div>
+
+    <div id = "HSV_V" class="hsv_box">
+        V:<input type="number" id="V" min="0" max="100" step="1" value="0" onclick="get_V()">
+        <input type="range" id="V_range" min="0" max="100" step="1" value="0" class="range" >
+    </div>
+</div>
+
+<div class="canvas">
+    <canvas id="color" class="color"></canvas>
+</div>
+
+<div class="RGB">
+    <div id="RGB_R" class="rgb_box" >
+        R: <input type="number" id="R" min="0" max="255" step="1" value="0" onclick="get_R()">
+        <input type="range" id="R_range" min="0" max="255" step="1" value="0" onclick="get_R_canvas_color()" class="range" >
+    </div>
+    <div id="RGB_G" class="rgb_box" >
+        G: <input type="number" id="G" min="0" max="255" step="1" value="0" onclick="get_G()">
+        <input type="range" id="G_range" min="0" max="255" step="1" value="0" onclick="get_G_canvas_color()" class="range" >
+    </div>
+    <div id="RGB_B" class="rgb_box" >
+        B: <input type="number" id="B" min="0" max="255" step="1" value="0" onclick="get_B()">
+        <input type="range" id="B_range" min="0" max="255" step="1" value="0"  onclick="get_B_canvas_color()" class="range">
+    </div>
+</div>
+
+
+<script src = "js/index.js"> </script>
+</body>
+</html>
